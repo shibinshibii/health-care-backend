@@ -81,6 +81,7 @@ pip install -r requirements.txt
 5. **Create a .env file in the root directory of the project**
 
 Add the following database credentials to a .env file or use your own database:
+
 DB_NAME=hcbackend 
 DB_USER=hcuser        
 DB_PASSWORD=123  
@@ -88,8 +89,11 @@ DB_HOST=localhost
 DB_PORT=5432 
 
 6. **Run migrations to set up the database and then run the server**
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py runserver
 
 7. **Test the API endpoints using Postman**
@@ -97,6 +101,7 @@ python manage.py runserver
 8. **For authentication, provide the JWT token as a Bearer token in the headers:**
 
 json:-
+
 {
     "Authorization": "Bearer <JWT_token>"
 }
